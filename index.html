@@ -56,7 +56,8 @@ function myPic() {
 	var <img id = "forest" src = "SNOWY FOREST.jpg" >
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
-	var img = document.getElementById("forest");
+	var img = newImage();
+	image.src = "SNOWY FOREST.jpg";
 	ctx.drawImage(img,20,20);
 	
 } 
