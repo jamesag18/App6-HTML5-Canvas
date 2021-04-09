@@ -58,7 +58,7 @@ function myName() {
 function myPic() { 
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
-	var img = documnet.getElementById("Forest");
+	var img = document.getElementById("Forest");
 	ctx.drawImage(img,20,20);
 	
 } 
@@ -78,7 +78,7 @@ function myRect() {
 	
 	<script>
 function myClear() {
-	var c = documnet.getElementById("myCanvas");
+	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
 	ctx.clearRect(0, 0, c.width, c.height);
 }
