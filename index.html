@@ -53,7 +53,7 @@ function myName() {
 function myPic() { 
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
-	var img = documnet.getElementById("SNOWY FOREST.jpg");
+	var img = documnet.getElementById("Forest");
 	ctx.drawImage(img,10,10);
 } 
 </script>
@@ -107,6 +107,7 @@ function myClear() {
 <div id="content" class="w3-container">
 	<p>This is the start of my first canvas.</p>
 	<canvas id="myCanvas" width="500" height="300" style="border:1px solid #000000;"></canvas>
+	<img id="Forest" src="SNOWY FOREST.jpg" alt="The Forest" width="100" height="75">
 	<p><button onclick="myPic()">Picture</button></p>
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
