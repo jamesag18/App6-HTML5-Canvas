@@ -36,25 +36,29 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <script>
 
-	{
-		var docMod = document.lastModified; // loads last modified time stamp into docMod variable
+var docMod = document.lastModified; // loads last modified time stamp into docMod variable
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
-	}
+</script>
+	<script>
 function myName() {
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
 	ctx.font = "Bold 40px Times New Roman";
 	ctx.fillText("James Garcia", 10,50);
 }
+</script>
 	
+	<script>
 function myPic() { 
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
 	var img = documnet.getElementById("Forest");
 	ctx.drawImage(img,10,10);
 } 
-
+</script>
+	
+	<script>
 function myRect() {
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
@@ -63,9 +67,10 @@ function myRect() {
 	grd.addColorStop(1, "gold");
 	ctx.fillStyle = grd;
 	ctx.fillRect(10, 10, 150, 80);
-	
 }
-
+</script>
+	
+	<script>
 function myClear() {
 	var c = documnet.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
