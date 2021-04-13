@@ -68,11 +68,11 @@ function myPic() { //This function will generate a picture of a snowy forest tha
 function myRect() { //This function will generate a rectangle that is faded in color and will show up towards the middle of the canvas. 
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
-	var grd = ctx.createLinearGradient(0, 0, 150, 0);
+	var grd = ctx.createLinearGradient(0, 0, 250, 0);
 	grd.addColorStop(0, "red");
 	grd.addColorStop(1, "gold");
 	ctx.fillStyle = grd;
-	ctx.fillRect(70, 70, 150, 150);
+	ctx.fillRect(70, 70, 100, 100);
 }
 </script>
 	
