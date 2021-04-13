@@ -42,18 +42,18 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </script>
 	
 <script>
-function myName() {
+function myName() { //This function will generate my name in a Times New Roman font with a bold yellow as its filling. 
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
 	ctx.font = "Bold 40px Times New Roman";
-	ctx.fillStyle = 'Red';
+	ctx.fillStyle = 'black';
 	ctx.fillText("James Garcia", 150, 150);
 }
 </script>
 
 <script>
 
-function myPic() {
+function myPic() { //This function will generate a picture of a snowy forest that is expanded across the whole canvas. 
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
 	var img = new Image();
@@ -65,19 +65,19 @@ function myPic() {
 </script>
 	
 	<script>
-function myRect() {
+function myRect() { //This function will generate a rectangle that is faded in color and will show up towards the middle of the canvas. 
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
 	var grd = ctx.createLinearGradient(0, 0, 250, 0);
 	grd.addColorStop(0, "red");
 	grd.addColorStop(1, "gold");
 	ctx.fillStyle = grd;
-	ctx.fillRect(0, 0, myCanvas.width, myCanvas.height);
+	ctx.fillRect(0, 0, 150, 150);
 }
 </script>
 	
 	<script>
-function myClear() {
+function myClear() { //This function will clear the whole canvas. 
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
 	ctx.clearRect(0, 0, c.width, c.height);
@@ -109,13 +109,17 @@ function myClear() {
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>App6---HTML5-Canvas</h1>
 </div>
-	
-<div id="content" class="w3-container">
+<!-- 
+This following code will generate the canvas and 
+also includes the buttons for the rectangle, the picture, the name, and then the button
+to clear the canvas.
+!--> 
+<div id="content" class="w3-container"> 
 	<p>This is the start of my first canvas.</p>
 	
 	
-	<canvas id="myCanvas" width="500" height="300" style="border:1px solid #000000;"></canvas>
-	<p>
+	<canvas id="myCanvas" width="500" height="300" style="border:1px solid #000000;"></canvas> 
+	<p> 
 	<button class="w3-btn w3-black" onclick = "myRect()"> Rectangle </button>
 	<button class="w3-button w3-blue" onclick = "myPic()"> Picture </button>
 	<button class="w3-button w3-green" onclick = "myName()"> Name </button>
@@ -126,7 +130,7 @@ function myClear() {
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
-<footer class="w3-bottom w3-container w3-flat-carrot">
+<footer class="w3-bottom w3-container w3-light-blue">
 	<p>DIY!</p>
 </footer>
 
