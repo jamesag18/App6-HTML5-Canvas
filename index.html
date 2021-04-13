@@ -42,12 +42,12 @@ console.log("This file last modified " + docMod); // generates message in javaSc
 </script>
 	
 <script>
-function myName() { //This function will generate my name in a Times New Roman font with a bold yellow as its filling. 
+function myName() { //This function will generate my name in a Times New Roman font with a bold gradient filling. 
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
 	ctx.font = "Bold 40px Times New Roman";
-	var grd = ctx.createLinearGradient(0, 0, 250, 0);
-	grd.addColorStop(0, "blue");
+	var grd = ctx.createLinearGradient(0, 0, 550, 0);
+	grd.addColorStop(0, "magenta");
 	grd.addColorStop(1, "gold");
 	ctx.fillStyle = grd;
 	ctx.fillText("James Garcia", 150, 150);
@@ -71,11 +71,11 @@ function myPic() { //This function will generate a picture of a snowy forest tha
 function myRect() { //This function will generate a rectangle that is faded in color and will show up towards the middle of the canvas. 
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
-	var grd = ctx.createLinearGradient(0, 0, 250, 0);
-	grd.addColorStop(0, "red");
-	grd.addColorStop(1, "gold");
+	var grd = ctx.createLinearGradient(0, 0, 450, 0);
+	grd.addColorStop(0, "magenta");
+	grd.addColorStop(1, "maroon");
 	ctx.fillStyle = grd;
-	ctx.fillRect(70, 70, 100, 100);
+	ctx.fillRect(100, 50, 300, 200);
 }
 </script>
 	
