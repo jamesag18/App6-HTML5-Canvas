@@ -53,12 +53,14 @@ function myName() {
 <script>
 
 function myPic() { 
-	var <img id = "forest" src = "SNOWY FOREST.jpg" >
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
 	var img = newImage();
 	image.src = "SNOWY FOREST.jpg";
-	ctx.drawImage(img,20,20);
+	image.onload = function() {
+		ctx.drawImage(picture,x,y,length,height)
+		
+	}
 	
 } 
 </script>
