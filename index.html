@@ -68,7 +68,7 @@ function myPic() {
 function myRect() {
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
-	var grd = ctx.createLinearGradient(0, 0, 125, 0);
+	var grd = ctx.createLinearGradient(0, 0, 250, 0);
 	grd.addColorStop(0, "red");
 	grd.addColorStop(1, "gold");
 	ctx.fillStyle = grd;
@@ -118,7 +118,7 @@ function myClear() {
 	<p>
 	<button class="w3-button w3-Green" onclick = "myRect()"> Rectangle </button>
 	<button class="w3-button w3-Blue" onclick = "myPic()"> Picture </button>
-	<button class="w3-button w3-Red" background-color="red" onclick = "myName()"> Name </button>
+	<button class="w3-button w3-Red" onclick = "myName()"> Name </button>
 	<button class="w3-button w3-Blue" onclick = "myClear()"> Clear Canvas </button>
 	</p>
 </div>	
