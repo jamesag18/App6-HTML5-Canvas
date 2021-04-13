@@ -46,7 +46,10 @@ function myName() { //This function will generate my name in a Times New Roman f
 	var c = document.getElementById("myCanvas");
 	var ctx = c.getContext("2d");
 	ctx.font = "Bold 40px Times New Roman";
-	ctx.fillStyle = 'black';
+	var grd = ctx.createLinearGradient(0, 0, 250, 0);
+	grd.addColorStop(0, "blue");
+	grd.addColorStop(1, "gold");
+	ctx.fillStyle = grd;
 	ctx.fillText("James Garcia", 150, 150);
 }
 </script>
